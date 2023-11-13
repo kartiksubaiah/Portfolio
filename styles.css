@@ -1,0 +1,200 @@
+:root{
+    --main-orange: #E3856B;
+    --main-teal: #EDCBD2;
+    --main-yellow: #80C4B7;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+  }
+  
+  #navbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-orange);
+    height: 70px;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+  }
+  .nav-link{
+    display: flex;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .nav-link a{
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  
+  .nav-link a:link{
+    text-decoration: none;
+    color: var(--main-teal);
+  }
+  
+  .nav-link a:visited{
+    color: var(--main-teal);
+  }
+  
+  .nav-link a:hover{
+    background-color: #3B5BA5;
+    color: var(--main-orange);
+  }
+  
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-yellow);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-orange);
+    font-family: Poppins, sans-serif;
+  }
+  
+  #welcome-section h1{
+    font-size: 3.5em;
+    /*margin: 200px auto 20px auto;*/
+  }
+  
+  #welcome-section p{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: var(--main-teal);
+    font-style: italic; 
+  }
+  
+  #projects{
+    background-color: #3B5BA5;
+    font-family: Poppins, sans-serif;
+  }
+  
+  #projects-title{
+    text-align: center;
+    max-width: 226px;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 2.5em;
+    border-bottom: 2px solid var(--main-teal);
+    color: var(--main-teal);
+  }
+  
+  .project-tile{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-auto-rows: 400px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+    row-gap: 70px;
+  }
+
+  .project-tile a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    border: 3px solid var(--main-teal);
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  
+  .project-tile a:link{
+    text-decoration: none;
+  }
+  
+  .project-tile a{
+    margin: 40px;
+  }
+  
+  .project-tile a p{
+    margin-top: 0;
+    text-align: center;
+    height: 50px;
+    background-color: var(--main-orange);
+    color: var(--main-teal);
+    font-size: 1.5em;
+    padding-top: 10px;
+    border-radius: 3px;
+  }
+
+  /*.one{
+    display: flex;
+    flex-direction: column;
+  }*/
+  
+  #contact{
+    background-color: var(--main-yellow);
+    height: 100vh;
+    color: var(--main-teal);
+  }
+  
+  #contact h1{
+    font-family: Poppins, sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+    text-align: center;
+    padding-top: 200px;
+  }
+  
+  #social{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 2em;
+    font-family: Poppins, sans-serif;
+  }
+  #social a{
+    transition: transform .3s ease-in-out;
+  }
+  
+  #social a:link{
+    text-decoration: none;
+    color: var(--main-teal);
+  }
+  
+  #social a:hover{
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+  }
+  
+  #social a:visited{
+    color: var(--main-teal);
+  }
+  
+  hr{
+    height: 3px;
+    background-color: var(--main-orange);
+  }
+  
+  @media (max-width: 600px){
+    html{
+      font-size: 58%;
+    }
+    .project-tile{
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: 300px;
+    }
+  }
+
+  /*https://shorturl.at/aFLN7
+https://shorturl.at/fpxIS*/
